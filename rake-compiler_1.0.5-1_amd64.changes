@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 11 Sep 2018 04:23:45 +0900
+Source: rake-compiler
+Binary: rake-compiler
+Built-For-Profiles: nobiarch nocheck nodoc
+Architecture: all
+Version: 1.0.5-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Changed-By: Youhei SASAKI <uwabami@gfd-dennou.org>
+Description:
+ rake-compiler - Rake-based Ruby Extension (C, Java) task generator
+Changes:
+ rake-compiler (1.0.5-1) unstable; urgency=medium
+ .
+   * d/watch: use github as upstream due to missing some tests in gem
+   * New upstream version 1.0.5
+   * Update manpage
+   * d/{control,compat}: Bump compat 11
+   * d/control: Bump Standard-Version 4.2.1
+   * d/control: Update Vcs-{Git,Browser} field
+   * d/copyright: fix insecure-copyright-format-uri
+   * d/tests: enable autopkgtest
+Checksums-Sha1:
+ 85375e2b93167ca10eb388d4910d9946affe1371 16948 rake-compiler_1.0.5-1_all.deb
+ a207670cfe7eb6aeb9e478fb36538c8d6cbd0981 8441 rake-compiler_1.0.5-1_amd64.buildinfo
+Checksums-Sha256:
+ c3572c5f1718c1c3e0b4e1a8689701d9508c744252833ba145f1057aed7fe915 16948 rake-compiler_1.0.5-1_all.deb
+ ef9a76bee850ef2137ad8cd3159403d828e61ff14b8d4c0f05a800d0da0f6f92 8441 rake-compiler_1.0.5-1_amd64.buildinfo
+Files:
+ 5d34175baa95883c0dc7f9de7027a184 16948 ruby optional rake-compiler_1.0.5-1_all.deb
+ ea0f9f4d685f229bd07e25025756f001 8441 ruby optional rake-compiler_1.0.5-1_amd64.buildinfo

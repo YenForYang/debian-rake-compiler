@@ -1,0 +1,9 @@
+48d81cc4c1e896dde0921fdb99aaeced  usr/bin/rake-compiler
+39edc31873bd399559acd9e13ccedaa9  usr/lib/ruby/vendor_ruby/rake/baseextensiontask.rb
+dbb423c15fba6708c558795cca9659fb  usr/lib/ruby/vendor_ruby/rake/extensioncompiler.rb
+5a79f90a5f084517ab5016cea58638be  usr/lib/ruby/vendor_ruby/rake/extensiontask.rb
+53ae2bd423359499c7ee1120d7b672da  usr/lib/ruby/vendor_ruby/rake/javaextensiontask.rb
+896ed3f2d68abd9bb758b5db0ae8fc21  usr/share/doc/rake-compiler/changelog.Debian.gz
+9ddf7ce9a6810cb24cca0cc4688708bc  usr/share/doc/rake-compiler/changelog.gz
+e85a7bee344e2038d08c10d54e6dcb60  usr/share/doc/rake-compiler/copyright
+32a8f4b799c7c518173d80853d461afb  usr/share/rubygems-integration/all/specifications/rake-compiler-1.0.5.gemspec

@@ -1,0 +1,118 @@
+rake-compiler (1.0.5-1) unstable; urgency=medium
+
+  * d/watch: use github as upstream due to missing some tests in gem
+  * New upstream version 1.0.5
+  * Update manpage
+  * d/{control,compat}: Bump compat 11
+  * d/control: Bump Standard-Version 4.2.1
+  * d/control: Update Vcs-{Git,Browser} field
+  * d/copyright: fix insecure-copyright-format-uri
+  * d/tests: enable autopkgtest
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Tue, 11 Sep 2018 04:23:45 +0900
+
+rake-compiler (1.0.4-1) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Youhei SASAKI ]
+  * New upstream version 1.0.4
+  * Drop patches
+  * Bump debhelper >= 10
+  * Bump Standard Version: 4.0.0
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Thu, 31 Aug 2017 04:40:12 +0900
+
+rake-compiler (0.9.5-2) unstable; urgency=medium
+
+  [ Christian Hofstaedtler ]
+  * Remove obsolete d/require-rubygems.overrides
+
+  [ Youhei SASAKI ]
+  * Bump Compat: 9
+  * Fix FTBFS for RSpec transition (Closes: #794147)
+  * Refresh patches
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Sun, 27 Dec 2015 22:55:15 +0900
+
+rake-compiler (0.9.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.9.5
+  * Bump Standard Version: 3.9.6
+  * Update manpage
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Thu, 26 Feb 2015 15:18:37 +0900
+
+rake-compiler (0.9.3-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.9.3
+  * Drop patch: applied upstream
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Mon, 04 Aug 2014 13:34:17 +0900
+
+rake-compiler (0.9.2-2) unstable; urgency=low
+
+  * Team upload.
+  * add patch for Ruby 2.1 support (Closes: #747723, #746084)
+
+ -- Jonas Genannt <jonas.genannt@capi2name.de>  Sat, 02 Aug 2014 15:33:16 +0200
+
+rake-compiler (0.9.2-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.9.2
+  * Bump Standard Version: 3.9.5
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Tue, 14 Jan 2014 22:58:25 +0900
+
+rake-compiler (0.9.1-2) unstable; urgency=low
+
+  * Drop Depends: rubygems
+  * Fix ruby2.0 build (Closes: #720223)
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Thu, 12 Sep 2013 21:57:53 +0900
+
+rake-compiler (0.9.1-1) unstable; urgency=low
+
+  * Imported Upstream version 0.9.1
+  * Update debian/copyright: Bump copyright year
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Tue, 20 Aug 2013 04:48:13 +0900
+
+rake-compiler (0.8.3-2) unstable; urgency=low
+
+  [ Cédric Boutillier ]
+  * debian/control: remove obsolete DM-Upload-Allowed flag
+  * use canonical URI in Vcs-* fields
+  * debian/control: fix Vcs-* fields
+
+  [ Youhei SASAKI ]
+  * Rebuild: provides rubygems meta-information (Closes: #700419)
+  * Add d/source/local-options: unapply patches after build
+  * Move experimental to unstable
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Fri, 12 Jul 2013 18:38:59 +0900
+
+rake-compiler (0.8.3-1) experimental; urgency=low
+
+  * Imported Upstream version 0.8.3
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Mon, 01 Apr 2013 01:10:01 +0900
+
+rake-compiler (0.8.2-1) experimental; urgency=low
+
+  * Imported Upstream version 0.8.2
+  * Drop rubygems from Build-Depends
+  * Add require-rubygems.overrides, drop IGNORE-TESTS
+  * Format URI update: DEP5 -> Formant/1.0
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Sun, 20 Jan 2013 06:32:25 +0900
+
+rake-compiler (0.8.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #672499)
+
+ -- Youhei SASAKI <uwabami@gfd-dennou.org>  Tue, 08 May 2012 18:54:26 +0900

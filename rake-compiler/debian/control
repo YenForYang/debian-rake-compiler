@@ -1,0 +1,38 @@
+Source: rake-compiler
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Youhei SASAKI <uwabami@gfd-dennou.org>,
+           Taku YASUI <tach@debian.org>
+Build-Depends: debhelper (>= 11~),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 4.2.1
+Vcs-Git: https://salsa.debian.org/ruby-team/rake-compiler.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/rake-compiler
+Homepage: https://github.com/rake-compiler/rake-compiler
+XS-Ruby-Versions: all
+
+Package: rake-compiler
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: rake,
+         ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Rake-based Ruby Extension (C, Java) task generator
+ The rake-compiler is first and foremost a productivity tool for Ruby
+ developers. It's goal is to make the busy developer's life easier by
+ simplifying the building and packaging of Ruby extensions by
+ simplifying code and reducing duplication.
+ .
+ It follows *convention over configuration* by advocating a standardized
+ build and package structure for both C and Java based RubyGems.
+ .
+ Rake-compiler is the result of many hard-won experiences dealing with
+ several diverse RubyGems that provided native extensions for different
+ platforms and different user configurations in different ways. Details
+ such as differences in code portability, differences in code clarity,
+ and differences in project directory structure often made it very
+ difficult for newcomers to those RubyGems.

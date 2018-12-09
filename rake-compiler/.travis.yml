@@ -1,0 +1,14 @@
+language: ruby
+notifications:
+  recipients:
+    - rake-compiler@ml.commit-email.info
+before_script:
+  - gem update bundler
+rvm:
+  - 2.1.2
+  - 2.2
+  - 2.3.0
+  - ruby-head
+matrix:
+  allow_failures:
+    - rvm: ruby-head

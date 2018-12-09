@@ -1,0 +1,110 @@
+.TH RAKE-COMPILER "1" "September 2018" "rake-compiler 1.0.5" "User Commands"
+.SH NAME
+rake-compiler \- Rake-based Ruby Extension (C, Java) task generator
+.SH DESCRIPTION
+The Rake-compiler is first and foremost a productivity tool for Ruby developers. It's goal is to make the busy developer's life easier by simplifying the building and packaging of Ruby extensions by simplifying code and reducing duplication.
+
+It follows *convention over configuration* by advocating a standardized build and package structure for both C and Java based RubyGems.
+
+rake-compiler is the result of many hard-won experiences dealing with several diverse RubyGems that provided native extensions for different platforms and different user configurations in different ways. Details such as differences in code portability, differences in code clarity, and differences in project directory structure often made it very difficult for newcomers to those RubyGems.
+
+.SH USAGE
+rake\-compiler [\-f rakefile] {options} targets...
+.PP
+.SH OPTIONS
+.TP
+\fB\-\-backtrace\fR=\fI\,[OUT]\/\fR
+Enable full backtrace.  OUT can be stderr (default) or stdout.
+.TP
+\fB\-\-comments\fR
+Show commented tasks only
+.TP
+\fB\-\-job\-stats\fR [LEVEL]
+Display job statistics. LEVEL=history displays a complete job list
+.TP
+\fB\-\-rules\fR
+Trace the rules resolution.
+.HP
+\fB\-\-suppress\-backtrace\fR PATTERN Suppress backtrace lines matching regexp PATTERN. Ignored if \fB\-\-trace\fR is on.
+.TP
+\fB\-A\fR, \fB\-\-all\fR
+Show all tasks, even uncommented ones (in combination with \fB\-T\fR or \fB\-D\fR)
+.TP
+\fB\-B\fR, \fB\-\-build\-all\fR
+Build all prerequisites, including those which are up\-to\-date.
+.TP
+\fB\-D\fR, \fB\-\-describe\fR [PATTERN]
+Describe the tasks (matching optional PATTERN), then exit.
+.TP
+\fB\-e\fR, \fB\-\-execute\fR CODE
+Execute some Ruby code and exit.
+.TP
+\fB\-E\fR, \fB\-\-execute\-continue\fR CODE
+Execute some Ruby code, then continue with normal task processing.
+.TP
+\fB\-f\fR, \fB\-\-rakefile\fR [FILENAME]
+Use FILENAME as the rakefile to search for.
+.TP
+\fB\-G\fR, \fB\-\-no\-system\fR, \fB\-\-nosystem\fR
+Use standard project Rakefile search paths, ignore system wide rakefiles.
+.TP
+\fB\-g\fR, \fB\-\-system\fR
+Using system wide (global) rakefiles (usually '~/.rake/*.rake').
+.TP
+\fB\-I\fR, \fB\-\-libdir\fR LIBDIR
+Include LIBDIR in the search path for required modules.
+.TP
+\fB\-j\fR, \fB\-\-jobs\fR [NUMBER]
+Specifies the maximum number of tasks to execute in parallel. (default is number of CPU cores + 4)
+.TP
+\fB\-m\fR, \fB\-\-multitask\fR
+Treat all tasks as multitasks.
+.TP
+\fB\-n\fR, \fB\-\-dry\-run\fR
+Do a dry run without executing actions.
+.TP
+\fB\-N\fR, \fB\-\-no\-search\fR, \fB\-\-nosearch\fR
+Do not search parent directories for the Rakefile.
+.TP
+\fB\-P\fR, \fB\-\-prereqs\fR
+Display the tasks and dependencies, then exit.
+.TP
+\fB\-p\fR, \fB\-\-execute\-print\fR CODE
+Execute some Ruby code, print the result, then exit.
+.TP
+\fB\-q\fR, \fB\-\-quiet\fR
+Do not log messages to standard output.
+.TP
+\fB\-r\fR, \fB\-\-require\fR MODULE
+Require MODULE before executing rakefile.
+.TP
+\fB\-R\fR, \fB\-\-rakelibdir\fR RAKELIBDIR,
+Auto\-import any .rake files in RAKELIBDIR. (default is 'rakelib')
+.HP
+\fB\-\-rakelib\fR
+.TP
+\fB\-s\fR, \fB\-\-silent\fR
+Like \fB\-\-quiet\fR, but also suppresses the 'in directory' announcement.
+.TP
+\fB\-t\fR, \fB\-\-trace\fR=\fI\,[OUT]\/\fR
+Turn on invoke/execute tracing, enable full backtrace. OUT can be stderr (default) or stdout.
+.TP
+\fB\-T\fR, \fB\-\-tasks\fR [PATTERN]
+Display the tasks (matching optional PATTERN) with descriptions, then exit. \fB\-AT\fR combination displays all of tasks contained no description.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Log message to standard output.
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+Display the program version.
+.TP
+\fB\-W\fR, \fB\-\-where\fR [PATTERN]
+Describe the tasks (matching optional PATTERN), then exit.
+.TP
+\fB\-X\fR, \fB\-\-no\-deprecation\-warnings\fR
+Disable the deprecation warnings.
+.TP
+\fB\-h\fR, \fB\-H\fR, \fB\-\-help\fR
+Display this help message.
+.SH AUTHOR
+This manual page was written by Youhei SASAKI <uwabami@gfd-dennou.org>, for the Debian GNU/Linux system(but may be used by others).
